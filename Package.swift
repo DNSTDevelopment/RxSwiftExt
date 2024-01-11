@@ -10,9 +10,6 @@ let package = Package(
     products: [
         .library(name: "RxSwiftExt", targets: ["RxSwiftExt"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0")),
-    ],
     targets: [
         .target(name: "RxSwiftExt", dependencies: ["RxSwift", "RxCocoa"], path: "Source"),
         .testTarget(name: "RxSwiftExtTests", dependencies: ["RxSwiftExt", "RxTest"], path: "Tests"),
