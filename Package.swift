@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "RxSwiftExt", targets: ["RxSwiftExt"]),
     ],
     targets: [
-        .target(name: "RxSwiftExt", dependencies: ["RxSwift", "RxCocoa"], path: "Source"),
+        .target(name: "RxSwiftExt", path: "Source"),
         .testTarget(name: "RxSwiftExtTests", dependencies: ["RxSwiftExt", "RxTest"], path: "Tests"),
     ],
     swiftLanguageVersions: [.v5]
